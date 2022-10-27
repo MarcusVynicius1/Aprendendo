@@ -1,0 +1,152 @@
+<header?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" type="text/css" href="portal1.css">
+    <title>VSPLab</title>
+   
+</head>
+<body>
+    <input value="Sim" type="text" hidden="hidden" id="LoginFeito" />-->
+    <?php
+       if(isset($_SESSION['id']) and (isset($_SESSION['nome']))){
+           echo '<input value="Sim" type="text" hidden="hidden" id="LoginFeito" />';
+           echo '<input value="'.$_SESSION['nome'].'" type="text" hidden="hidden" id="nome" />';
+       }else{
+           echo '<input value="Nao" type="text" hidden="hidden" id="LoginFeito" />';
+       }
+       ?> 
+    <header id="cabecalho"> 
+        <div id="botao1" href="cadastro.html">>			
+        </div>		
+        <div id="botao2">            
+        </div>
+        <h1 id="titulo">VSPLab</h1>
+        <div>
+            <a> <img id="logoIff" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Instituto_Federal_Fluminense_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_Fluminense_-_Marca_Vertical_2015.svg.png" alt=""></a>
+        </div>          
+    </header>
+    <br><br><br><br><br>
+    
+    <br><br>
+    <div>
+        <button class="divBotao1" autofocus type="button" onclick="mostrarTopico(1)">
+            Levantamento de Requisitos
+        </button>
+        <button class="divBotao" type="button" onclick="mostrarTopico(2)">
+            Análise de Requisitos
+        </button>
+        <button class="divBotao" type="button" onclick="mostrarTopico(3)">
+            Implementação
+        </button>
+        <button class="divBotao" type="button" onclick="mostrarTopico(4)">
+            Teste
+        </button>
+        <button class="divBotao" type="button" onclick="mostrarTopico(5)">
+            Manutenção
+        </button>
+    </div>
+
+    <br><br>
+    <div class="container">
+        <div id="div1">
+            <div><h2>Para que serve?</h2><hr></div>
+            <br>
+           <p id="pDivs"> O Levantamento de Requisitos serve para...</p>
+        </div>
+        <div id="div2">
+            <div><h2>Artigos</h2><button id="botaoAdd"><a href="enviarArtigos.html">Modificar</a></button><hr></div>
+            <br>
+            <div id="pDivs2">Artigos
+                <ul>
+                    <li>
+                        Artigo 1
+                    </li>
+                    <br>
+                    <li>
+                        Artigo 2
+                    </li>
+                    <br>
+                    <li>
+                        Artigo 3                      
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="div3">
+            <div><h2>Ferramentas</h2><hr></div>
+            <br>          
+             <div id="pDivs3">
+                <ul>
+                    <li>
+                        Ferramenta 1
+                    </li>
+                    <br>
+                    <li>
+                        Ferramenta 2
+                    </li>
+                    <br>
+                    <li>
+                        Ferramenta 3                      
+                    </li>
+                </ul>
+             </div>
+        </div>
+        <div id="div4">
+            <div><h2>Crie seu projeto</h2><hr></div>
+            <h3>Introdução</h3>
+            <ul>
+                <li>Título do Sistema</li>                  
+                <li>Escopo do Sistema</li>
+                <li>Definição e Abreviações</li>
+            </ul>
+            <h3>Descrição Geral</h3>
+            <ul><li>Funções do Sistema</li>                  
+                <li>Stakeholders</li>
+            </ul>
+            <h3>Requisitos</h3>
+            <ul>
+                <li>
+                    Requisitos Funcionais
+                </li>
+                <li>
+                    Requisitos não Funcionais
+                </li>
+                <li>Regra de Negócio</li>
+            </ul>
+            <h3 style="text-align: left;">Descrição do Metodos Realizados para Levantar Os Requisitos</h3>
+            <h3 style="text-align: left;">Análise de Requisitos</h3>
+
+            <button class="button3">Clique para Começar</button>
+        </div>
+    </div>  
+
+    <br>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" id="login-usuario-form" class="form-container">
+		<span id="msgAlertErroLogin"></span>
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="senha" id="senha" required>
+      
+          <button type="submit" id="login-usuario-btn" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <div><br><br></div>
+    </div>
+  
+    <script src="portal1.js"></script>
+</body>
+    <!--Created by Marcus Vynícius and José Augusto-->
+</html>
