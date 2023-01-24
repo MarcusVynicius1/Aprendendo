@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+button{
+      cursor: pointer; 
+      justify-content: center;
+      border:3px solid rgba(100, 100, 100, 1);
+      padding: 11px 21px; 
+      vertical-align: middle; 
+      background: #c7c7c7; 
+      color:black;
+      border-radius:10px; 
+      font-size: 20px; 
+      font-family:helvetica, serif;
+      text-decoration:none;
+      display: flex;
+      box-shadow: 0px 5px #666;;
+}
+
+button:active{
+    transform: translateY(4px);
+    box-shadow: 0 7px #666;
+}
+
+#divv{
+    display: flex;
+    justify-content: center;
+    background-image: url("https://www.deezer-blog.com/assets/sites/8/2022/06/harry-styles.jpg");
+    background-color: blue;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+}
+
+.principal{
+    border: 2px red;
+}
+
+</style>
+    <title>HS</title>
+</head>
+
+<body id="divv">
+  <div>
+  <h1>Clique no Botao</h1>
+  <button onclick="clicou()">Se liga hein</button>
+  </div>
+  <div class="principal">
+  </div>
+     
+</body>
+<script>
+function clicou(){
+    var teste;
+    teste = document.getElementById('divv');
+
+    var img1 = "url(https://www.deezer-blog.com/assets/sites/8/2022/06/harry-styles.jpg)";
+    var img2 = "url(https://i0.wp.com/valkirias.com.br/wp-content/uploads/2022/08/harry-styles-destacada-4.png?fit=1080%2C540&ssl=1)";  
+
+    if(teste.style.backgroundImage != img2){
+        teste.style.backgroundImage = img2;   
+    }
+} 
+</script>
+</html>
