@@ -30,10 +30,9 @@ button:active{
 #divv{
     display: flex;
     justify-content: center;
-    background-image: none  ;
-    background-color: blue;
+    background-image: none;
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -58,13 +57,14 @@ button:active{
 
 function sortear(){
    
-    var img1 = "url(https://www.deezer-blog.com/assets/sites/8/2022/06/harry-styles.jpg)";
-    var img2 = "url(https://i0.wp.com/valkirias.com.br/wp-content/uploads/2022/08/harry-styles-destacada-4.png?fit=1080%2C540&ssl=1)"; 
-    var img3 = "url(https://akns-images.eonline.com/eol_images/Entire_Site/2021814/rs_1200x1200-210914061017-1200-Harry-Styles-Met-Gala-091421.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top)"
-    var img4 = "url(https://veja.abril.com.br/wp-content/uploads/2022/06/GettyImages-1393470392.jpg?quality=70&strip=info&w=1280&h=720&crop=1)"
+    var img1 = "url(https://conteudo.imguol.com.br/blogs/165/files/2018/09/Backstreet-Boys2-986x600-986x600.jpg)";
+    var img2 = "url(https://cultura.uol.com.br/upload/tvcultura/entretenimento/20230119144112_snapinsta.app-1080-277725077-2188286814673075-1541656396560924510-n-2-1-.jpg)"; 
+    var img3 = "url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Backstreet_Boys_2019_by_Glenn_Francis.jpg)"
+    var img4 = "url(https://s2.glbimg.com/7nje3HfWQF49ac6feg18YAlovdk=/0x0:1500x1000/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/E/7/gk3El6QuWsiXAxNluxBQ/imagehires.jpg)"
     var myArray = [img1, img2, img3, img4];
 
-    var N = Math.floor(Math.random()*4);
+    var N = Math.floor(Math.random()*4 );
+    console.log(N);
 
     var body = document.getElementById('divv');
     body.style.backgroundImage = myArray[N];
