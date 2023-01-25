@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+button{
+      cursor: pointer; 
+      justify-content: center;
+      border:3px solid rgba(100, 100, 100, 1);
+      padding: 11px 21px; 
+      vertical-align: middle; 
+      background: #c7c7c7; 
+      color:black;
+      border-radius:10px; 
+      font-size: 20px; 
+      font-family:helvetica, serif;
+      text-decoration:none;
+      display: flex;
+      box-shadow: 0px 5px #666;;
+}
+
+button:active{
+    transform: translateY(4px);
+    box-shadow: 0 7px #666;
+}
+
+#divv{
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+}
+
+.principal{
+    border: 2px red;
+}
+
+</style>
+    <title>HS</title>
+</head>
+
+<body id="divv">
+  <div>
+  <h1>Clique no Botao</h1>
+  <button onclick="sortear()">Se liga hein</button>
+  </div>
+  <div class="principal">
+  </div>
+     
+</body>
+<script>
+
+function sortear(){
+   
+    var img1 = "url(https://conteudo.imguol.com.br/blogs/165/files/2018/09/Backstreet-Boys2-986x600-986x600.jpg)";
+    var img2 = "url(https://cultura.uol.com.br/upload/tvcultura/entretenimento/20230119144112_snapinsta.app-1080-277725077-2188286814673075-1541656396560924510-n-2-1-.jpg)"; 
+    var img3 = "url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Backstreet_Boys_2019_by_Glenn_Francis.jpg)"
+    var img4 = "url(https://s2.glbimg.com/7nje3HfWQF49ac6feg18YAlovdk=/0x0:1500x1000/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/E/7/gk3El6QuWsiXAxNluxBQ/imagehires.jpg)"
+    var myArray = [img1, img2, img3, img4];
+
+    var N = Math.floor(Math.random()*4 );
+    console.log(N);
+
+    var body = document.getElementById('divv');
+    body.style.backgroundImage = myArray[N];
+   
+}
+
+</script>
+</html>
