@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+button{
+      cursor: pointer; 
+      justify-content: center;
+      border:3px solid rgba(100, 100, 100, 1);
+      padding: 11px 21px; 
+      vertical-align: middle; 
+      background: #c7c7c7; 
+      color:black;
+      border-radius:10px; 
+      font-size: 20px; 
+      font-family:helvetica, serif;
+      text-decoration:none;
+      display: flex;
+      box-shadow: 0px 5px #666;;
+}
+
+button:active{
+    transform: translateY(4px);
+    box-shadow: 0 7px #666;
+}
+
+#divv{
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: center;
+}
+
+.principal{
+    border: 2px red;
+}
+
+</style>
+    <title>HS</title>
+</head>
+
+<body id="divv">
+  <div>
+  <h1>Clique no Botao</h1>
+  <button onclick="sortear()">Se liga hein</button>
+  </div>
+  <div class="principal">
+  </div>
+     
+</body>
+<script>
+
+function sortear(){
+   
+    var img1 = "url(https://www.deezer-blog.com/assets/sites/8/2022/06/harry-styles.jpg)";
+    var img2 = "url(https://i0.wp.com/valkirias.com.br/wp-content/uploads/2022/08/harry-styles-destacada-4.png?fit=1080%2C540&ssl=1)"; 
+    var img3 = "url(https://akns-images.eonline.com/eol_images/Entire_Site/2021814/rs_1200x1200-210914061017-1200-Harry-Styles-Met-Gala-091421.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top)"
+    var img4 = "url(https://veja.abril.com.br/wp-content/uploads/2022/06/GettyImages-1393470392.jpg?quality=70&strip=info&w=1280&h=720&crop=1)"
+    var myArray = [img1, img2, img3, img4];
+
+    var N = Math.floor(Math.random()*4 );
+    console.log(N);
+
+    var body = document.getElementById('divv');
+    body.style.backgroundImage = myArray[N];
+   
+}
+
+</script>
+</html>
