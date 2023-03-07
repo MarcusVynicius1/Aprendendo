@@ -22,81 +22,81 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Sutilmente',
         artist : 'Skank',
         music : 'music/Sutilmente.mp3'
     },
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Satellite',
         artist : 'Harry Styles',
         music : 'music/Satellite.mp3'
     },
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'The Night We Met',
         artist : 'Lord Huron',
         music : 'music/The Night We Met.mp3'
     },
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Mind Over Matter',
         artist : 'Young the Giant',
         music : 'music/Mind Over Matter.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Medo Bobo',
         artist : 'Rubel',
         music : 'music/Medo Bobo.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Littlest Things',
         artist : 'Lily Allen',
         music : 'music/Littlest Things.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Little Freak',
         artist : 'Harry Styles',
         music : 'music/Little Freak.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'From the Dining Table',
         artist : 'Harry Styles',
         music : 'music/From the Dining Table.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'FreeFall',
         artist : 'Rainbow Kitten Surprise',
         music : 'music/Freefall .mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Fine Line',
         artist : 'Harry Styles',
         music : 'music/FineLine.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Como eu quero',
         artist : 'Kid Abelha',
         music : 'music/Como eu quero.mp3'
     }
     ,
     {
-        img : 'images/voce.png',
+        img : 'images/voce.jpeg',
         name : 'Cardigan',
         artist : 'Taylor Swift',
         music : 'music/Cardigan.mp3'
