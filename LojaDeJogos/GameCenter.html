@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GameCenter.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Site de Jogos</title>
+</head>
+
+<body>
+<!-- Barra superior -->
+<div class="topbar">
+    <div class="cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+    <div class="balance">
+        Saldo: R$ 0,00
+    </div>
+    <div class="auth">
+        <button id="open-modal-btn">Login</button>
+        <button id="open-cadastrar-btn">Cadastro</button>
+    </div>
+</div>
+<!-- Barra lateral -->
+<div class="wrapper">
+    <div class="sidebar">
+        <img src="Logo.png">
+        <ul>
+            <li><a href="#">Todos os jogos</a></li>
+            <br>
+            <li><a href="#">Ação</a></li>
+            <br>
+            <li><a href="#">Esportes</a></li>
+            <br>
+            <li><a href="#">Estratégia</a></li>
+            <br>
+            <li><a href="#">RPG</a></li>
+            <br>
+            <li><a href="#">Simulação</a></li>
+            <br>
+            <li><a href="#">Aventura</a></li>
+            <br>
+            <li><a href="#">Terror</a></li>
+
+        </ul>
+    </div>
+    <!-- Conteúdo principal -->
+    <div class="grid-container">
+        <div class="card">
+            <img src="https://licensingcon.com.br/wp-content/uploads/2019/08/thelastof.png" alt="Game Image">
+            <h2>The Last of US</h2>
+            <p class="description">Game Description</p>
+            <p class="price">R$199.99</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="https://zapgrupos.com/grupos/thumb/imgZapGrupos_1402181014480.jpg" alt="Game Image">
+            <h2>GTA V</h2>
+            <p class="description">Game Description</p>
+            <p class="price">R$119.99</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="https://www.truetrophies.com/boxart/Game_10330.jpg" alt="Game Image">
+            <h2>The Last Of US 2</h2>
+            <p class="description">Game Description</p>
+            <p class="price">R$119.99</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="https://img.olx.com.br/thumbs256x256/69/696331750360898.jpg" alt="Game Image">
+            <h2>God Of War Ragnarok</h2>
+            <p class="description">Game Description</p>
+            <p class="price">R$119.99</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="https://www.techpowerup.com/review/resident-evil-4-remake-fsr-2-1/images/small.png" alt="Game Image">
+            <h2>Resident Evil 4</h2>
+            <p class="description">Game Description</p>
+            <p class="price">R$199.99</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="https://www.techpowerup.com/review/elden-ring-benchmark-test-performance-analysis/images/small.png" alt="Game Image">
+            <h2>Elden Ring</h2>
+            <p class="description">Game Description</p>
+            <p class="price">R$199.99</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </div>
+        </div>
+        </div>
+<!-- Janela modal -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 style="text-align: center">Login</h1>
+        <br>
+        <form>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</div>
+
+<div id="cadastro-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 style="text-align: center">Cadastro</h1>
+        <br>
+        <form>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Confirmar senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+    <script src="GameCenter.js"></script>
+    </body>
+</html>
